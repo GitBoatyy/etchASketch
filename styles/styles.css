@@ -1,0 +1,11 @@
+/* Styles for Etch A Sketch */
+.header{
+    width: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-family: "Sacramento", cursive;
+    font-size: 24px;
+}
