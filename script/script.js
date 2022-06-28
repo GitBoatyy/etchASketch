@@ -17,8 +17,8 @@ function gridSize(){
     if (i > 1 && i < 100 ){
         let currentSize = i
         console.log(currentSize)
-        setupGrid(currentSize)
         clear()
+        setupGrid(currentSize)
     }else{
     let i = prompt (" Must be a number from 2 to 100","")
     
@@ -40,9 +40,7 @@ function setupGrid(size) {
 
 //resets grid on resize
 function clear() {
-    gridElements.forEach(item => {
-      item.style.backgroundColor = 'white';
-    });
+    grid.innerHTML = ''
   }
     
 function clearGrid(){
