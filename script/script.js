@@ -16,12 +16,10 @@ function gridSize(){
     let i = prompt("Pick a grid size from 2 to 100" , "")
     if (i > 1 && i < 100 ){
         let currentSize = i
-        console.log(currentSize)
         clear()
         setupGrid(currentSize)
     }else{
     let i = prompt (" Must be a number from 2 to 100","")
-    
     }
     }
 
@@ -35,6 +33,7 @@ function setupGrid(size) {
       gridElement.addEventListener('mouseover', changeColor)
       gridElement.addEventListener('mousedown', changeColor)
       grid.appendChild(gridElement)
+      
     }
   }
 
